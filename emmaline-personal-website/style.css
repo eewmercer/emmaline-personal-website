@@ -1,0 +1,217 @@
+/*____________________________________
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.introSection {
+    width: 100%;
+    height: 100vh;
+    padding: 1.5%;
+    background-image: url("photos/Grass_Field.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1500px 1000px;
+}
+
+.connectionsSection {
+    width: 100%;
+    height: 100vh;
+    background-color: #45431A;
+}
+
+.codeSkillsSection {
+    width: 100%;
+    height: 100vh;
+    background-color: #C86C6F;
+}
+
+.slides1 {
+    width: 100%; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.div-1 {
+    background-color: white;
+    top: 500px;
+    left: 100px;
+    padding: 35px;
+    height: 100px;
+    width: 500px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    word-spacing: 1.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.smallHeadingBoxes {
+    background-color: white;
+    position: relative;
+    top: -200px;
+    left: 550px;
+    padding: 35px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    height: 35px;
+    width: 225px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    word-spacing: 1.6px;
+    color: #000000;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.introSectionName {
+    position: relative;
+    left: 50px;
+    word-spacing: 100px;
+    margin-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    letter-spacing: 40px;
+    word-spacing: 150px;
+    color: white;
+    font-weight: 25;
+    text-decoration: none;
+    font-style: none;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+/* @media screen and (max-width: 375px) { 
+  
+    .introSection { 
+        width: 50%;
+        height: 50vh;
+        background-size: 10px 5px;
+    } 
+} */
+
+/*
+#FFE9D3 - light brown
+#45431A - dark green
+#C86C6F - dusty pink
+#7F1B42 - burgundy */
+
+html { 
+    background: url("photos/Wood.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
+
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 45px;
+    letter-spacing: 4px;
+    word-spacing: 4.2px;
+    color: #000000;
+    background-color: white;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 35px;
+    margin-left: 20px;
+    font-weight: 400;
+    text-decoration: overline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+.introSectionName {
+    position: relative;
+    word-spacing: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    letter-spacing: 40px;
+    word-spacing: 150px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 8px 5px 5px black;
+    font-variant: small-caps;
+}
+
+.wrapper {
+    width: 1000px;
+}
+
+.introImage {
+    display: block;
+    width: 100%; /* setting anything at 100% makes it responsively adjust size*/
+    padding-bottom: 30px;
+}
+
+.paragraphInfo {
+    width: 100%;
+    background-color: #45431A;
+}
+
+.paragraphInfo h2 {
+    padding: 75px 30px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: white;
+    line-height: 44px;
+}
+
+.paragraphInfo p {
+    text-indent: 50px;
+    padding: 40px 40px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+}
+
+.image {
+    position: relative;
+}
+    
+.image figcaption{
+    position: absolute;
+    top: 60%;
+    bottom: 25%;
+    left: 10%;
+}
+
+.languageSkills {
+    width: 100%;
+    background-color: #C86C6F;
+}
+
+.languageSkills p {
+    text-indent: 50px;
+    padding: 40px 40px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+}
+
+@media (max-width: 768px) {
+    .paragraphInfo {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        max-width: 70%;
+    }
+}
