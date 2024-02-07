@@ -105,7 +105,7 @@
 #C86C6F - dusty pink
 #7F1B42 - burgundy */
 
-html { 
+/* html { 
     background: url("photos/Wood.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -114,11 +114,17 @@ html {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
 
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
 }
 
-h1 {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 45px;
+.heading {
+    font-size: 60px;
     letter-spacing: 4px;
     word-spacing: 4.2px;
     color: #000000;
@@ -126,12 +132,28 @@ h1 {
     -webkit-border-radius: 20px 20px 20px 20px;
     border-radius: 20px 20px 20px 20px;
     padding: 35px;
-    margin-left: 20px;
     font-weight: 400;
     text-decoration: overline solid rgb(68, 68, 68);
     font-style: italic;
     font-variant: small-caps;
     text-transform: capitalize;
+}
+
+.websiteContentBorder {
+    width:100%;
+    padding: 10%;
+    background: url("photos/Wood.jpg") no-repeat center center fixed; 
+}
+
+.websiteWholeBorder {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+    border-top-width: 5%;
+    border-bottom-width: 5%;
+    border-left-width: 5%;
+    border-right-width: 5%;
+    background: #ffff;
 }
 
 .introSectionName {
@@ -148,27 +170,28 @@ h1 {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .introImage {
     display: block;
-    width: 100%; /* setting anything at 100% makes it responsively adjust size*/
-    padding-bottom: 30px;
+    width: 100%; /*setting anything at 100% makes it responsively adjust size */
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .paragraphInfo {
-    width: 100%;
     background-color: #45431A;
 }
 
-.paragraphInfo h2 {
+/* .paragraphInfo h2 {
     padding: 75px 30px 0px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: white;
     line-height: 44px;
-}
+} */
 
 .paragraphInfo p {
     text-indent: 50px;
@@ -191,22 +214,21 @@ h1 {
 }
 
 .languageSkills {
-    width: 100%;
     background-color: #C86C6F;
 }
 
-.languageSkills p {
+.languageSkills ul {
     text-indent: 50px;
     padding: 40px 40px 40px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    color: white;
+    font-size: 45px;
     line-height: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .paragraphInfo {
         font-size: 100px;
+        background-color: yellow;
     }
 }
 
