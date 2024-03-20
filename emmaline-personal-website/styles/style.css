@@ -1,126 +1,23 @@
-/*____________________________________
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.introSection {
-    width: 100%;
-    height: 100vh;
-    padding: 1.5%;
-    background-image: url("photos/Grass_Field.jpeg");
-    background-repeat: no-repeat;
-    background-size: 1500px 1000px;
-}
-
-.connectionsSection {
-    width: 100%;
-    height: 100vh;
-    background-color: #45431A;
-}
-
-.codeSkillsSection {
-    width: 100%;
-    height: 100vh;
-    background-color: #C86C6F;
-}
-
-.slides1 {
-    width: 100%; 
-    height: 100vh; 
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.div-1 {
-    background-color: white;
-    top: 500px;
-    left: 100px;
-    padding: 35px;
-    height: 100px;
-    width: 500px;
-    font-family: Georgia, serif;
-    font-size: 18px;
-    letter-spacing: 1.2px;
-    word-spacing: 1.6px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-.smallHeadingBoxes {
-    background-color: white;
-    position: relative;
-    top: -200px;
-    left: 550px;
-    padding: 35px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    border-radius: 20px 20px 20px 20px;
-    height: 35px;
-    width: 225px;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    letter-spacing: 1.2px;
-    word-spacing: 1.6px;
-    color: #000000;
-    font-weight: 400;
-    font-style: normal;
-    font-variant: normal;
-}
-
-.introSectionName {
-    position: relative;
-    left: 50px;
-    word-spacing: 100px;
-    margin-bottom: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
-    letter-spacing: 40px;
-    word-spacing: 150px;
-    color: white;
-    font-weight: 25;
-    text-decoration: none;
-    font-style: none;
-    font-variant: small-caps;
-    text-transform: none;
-}
-
-/* @media screen and (max-width: 375px) { 
-  
-    .introSection { 
-        width: 50%;
-        height: 50vh;
-        background-size: 10px 5px;
-    } 
-} */
-
 /*
 #FFE9D3 - light brown
 #45431A - dark green
 #C86C6F - dusty pink
-#7F1B42 - burgundy */
-
-/* html { 
-    background: url("photos/Wood.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
-
-} */
+#7F1B42 - burgundy 
+#DAB528 - sunny yellow
+#A5A511 - lime green
+*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Monaco', monospace;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+    padding: 5%;
 }
 
 .heading {
@@ -142,24 +39,25 @@
 .websiteContentBorder {
     width:100%;
     padding: 10%;
-    background: url("../photos/Wood.jpg") no-repeat center center fixed; 
+    background-color: #3776AC;
+    border-radius: 5%;
+    /* background: url("../photos/Code.jpg") no-repeat center center fixed;  */
 }
 
 .websiteWholeBorder {
     width: 100%;
     margin: 0 auto;
-    padding: 10%;
-    border-top-width: 5%;
-    border-bottom-width: 5%;
-    border-left-width: 5%;
-    border-right-width: 5%;
+    padding: 5%;
     background: #ffff;
 }
 
 .introSectionName {
-    position: relative;
+    position: absolute;
+    top: 60%;
+    bottom: 25%;
+    left: 10%;
+    width: 100%;
     word-spacing: 100px;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 80px;
     letter-spacing: 40px;
     word-spacing: 150px;
@@ -169,52 +67,44 @@
     font-variant: small-caps;
 }
 
-.wrapper {
-    width: 100%;
-    padding-bottom: 50px;
+.flexboxDesign {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .introImage {
-    display: block;
-    width: 100%; /*setting anything at 100% makes it responsively adjust size */
-    padding-top: 50px;
+    border-radius: 50%;
+    width: 90%; /*setting anything at 100% makes it responsively adjust size */
+    padding-top: 15%;
     padding-bottom: 70px;
 }
 
-.paragraphInfo {
-    background-color: #45431A;
+.wrapper {
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 5%;
 }
 
-/* .paragraphInfo h2 {
-    padding: 75px 30px 0px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    color: white;
-    line-height: 44px;
-} */
+.paragraphInfo {
+    background-color: #A5A511; 
+    border-radius: 20px;
+}
 
 .paragraphInfo p {
     text-indent: 50px;
     padding: 40px 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
+    font-weight: 400;
     font-size: 16px;
     color: white;
     line-height: 24px;
 }
 
-.image {
-    position: relative;
-}
-    
-.image figcaption{
-    position: absolute;
-    top: 60%;
-    bottom: 25%;
-    left: 10%;
-}
-
 .languageSkills {
-    background-color: #C86C6F;
+    background-color: #DAB528;
+    border-radius: 20px;
 }
 
 .languageSkills ul {
@@ -223,17 +113,92 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 45px;
     line-height: 24px;
+    list-style-type: none;
+}
+
+.buttonsFlexBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.languageButtons {
+    display: inline-block;
+    appearance: button;
+    background-color: #3776AC;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.languageButtons:after {
+    background-clip: padding-box;
+    background-color: white;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.languageButtons:main,
+.languageButtons:focus {
+    user-select: auto;
+}
+
+.languageButtons:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.languageButtons:disabled {
+    cursor: auto;
+}
+
+.languageButtons:active {
+    border-width: 4px 0 0;
+    background: none;
 }
 
 @media (max-width: 576px) {
-    .paragraphInfo {
-        font-size: 100px;
+    /* .paragraphInfo {
         background-color: yellow;
     }
+    
+    .languageSkills {
+        background-color: aqua;
+    } */
 }
 
-@media (max-width: 900px) {
-    body {
-        max-width: 70%;
+@media (max-width: 1024px) {
+    .flexboxDesign {
+        flex-wrap: wrap;
     }
 }
