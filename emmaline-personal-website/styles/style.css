@@ -142,7 +142,7 @@
 .websiteContentBorder {
     width:100%;
     padding: 10%;
-    background: url("photos/Wood.jpg") no-repeat center center fixed; 
+    background: url("../photos/Wood.jpg") no-repeat center center fixed; 
 }
 
 .websiteWholeBorder {
