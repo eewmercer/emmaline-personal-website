@@ -22,7 +22,7 @@ function addPythonGitHubLinks() {
 }
 
 function addJSGitHubLinks() {
-    links.innerHTML = "https://github.com/eewmercer/blockchain-wafflehouse";
+    links.innerHTML = "https://github.com/eewmercer/blockchain-wafflehouse" + "<br />" + "<br />" + "https://github.com/eewmercer/emmaline-personal-website";
 }
 
 btnJava.addEventListener("click", addJavaGitHubLinks);
