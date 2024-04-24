@@ -6,23 +6,26 @@ let btnJS = document.querySelector("#btnJS");
 let links = document.querySelector("#gitHubLink");
 
 function addJavaGitHubLinks() {
-    links.innerHTML = "https://github.com/eewmercer/dorm_room_arranger" + "<br />" + "<br />" + "https://github.com/eewmercer/CS-120---Final-Project/tree/main";
+    links.innerHTML = "<a href='https://github.com/eewmercer/dorm_room_arranger' target='_blank'>Dorm Room Arranger App</a>";
 }
 
 function addCSSGitHubLinks() {
-    links.innerHTML = "https://github.com/eewmercer/emmaline-personal-website" + "<br />" + "<br />" + "https://github.com/eewmercer/blockchain-wafflehouse";
+    links.innerHTML = "<a href='https://github.com/eewmercer/emmaline-personal-website' target='_blank'>Personal Website</a>" 
+    + "<br />" + "<br />" + "<a href='https://github.com/eewmercer/blockchain-wafflehouse' target='_blank'>Attendance App Using Blockhain</a>";
 }
 
 function addHTMLGitHubLinks() {
-    links.innerHTML = "https://github.com/eewmercer/emmaline-personal-website";
+    links.innerHTML = "<a href='https://github.com/eewmercer/emmaline-personal-website' target='_blank'>Personal Website</a>";
 }
 
 function addPythonGitHubLinks() {
-    links.innerHTML = "https://github.com/eewmercer/CS-120---Final-Project/tree/main";
+    links.innerHTML = "<a href='https://github.com/eewmercer/CS-120---Final-Project/tree/main' target='_blank'>Choose Your Own Adventure Game</a>";
+
 }
 
 function addJSGitHubLinks() {
-    links.innerHTML = "https://github.com/eewmercer/blockchain-wafflehouse" + "<br />" + "<br />" + "https://github.com/eewmercer/emmaline-personal-website";
+    links.innerHTML = "<a href='https://github.com/eewmercer/emmaline-personal-website' target='_blank'>Personal Website</a>" 
+    + "<br />" + "<br />" + "<a href='https://github.com/eewmercer/blockchain-wafflehouse' target='_blank'>Attendance App Using Blockhain</a>";
 }
 
 btnJava.addEventListener("click", addJavaGitHubLinks);
