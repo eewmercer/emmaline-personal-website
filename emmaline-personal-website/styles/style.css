@@ -87,6 +87,11 @@ h2 {
     padding-top: 5%;
 }
 
+.wrapper2 {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
 .paragraphInfo {
     background-color: #A5A511; 
     border-radius: 20px;
@@ -102,17 +107,19 @@ h2 {
     line-height: 24px;
 }
 
+.langFlexBox {
+    display: flex;
+    justify-content: space-between;
+}
+
 .languageSkills {
     background-color: #DAB528;
     border-radius: 20px;
 }
 
-.languageSkills ul {
+.languageSkillsList {
     text-indent: 50px;
     padding: 40px 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 45px;
-    line-height: 24px;
     list-style-type: none;
 }
 
@@ -185,6 +192,28 @@ h2 {
 .languageButtons:active {
     border-width: 4px 0 0;
     background: none;
+}
+
+.whiteBackground {
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-top: 4%;   
+    margin-right: 10%;   
+}
+
+.projectHeader {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.projectsList {
+    text-indent: 50px;
+    list-style-type: none;
 }
 
 @media (max-width: 576px) {
