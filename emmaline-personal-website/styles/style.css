@@ -41,7 +41,6 @@ h2 {
     padding: 10%;
     background-color: #3776AC;
     border-radius: 5%;
-    /* background: url("../photos/Code.jpg") no-repeat center center fixed;  */
 }
 
 .websiteWholeBorder {
@@ -76,7 +75,7 @@ h2 {
 
 .introImage {
     border-radius: 50%;
-    width: 90%; /*setting anything at 100% makes it responsively adjust size */
+    width: 90%; 
     padding-top: 15%;
     padding-bottom: 70px;
 }
@@ -216,15 +215,7 @@ h2 {
     list-style-type: none;
 }
 
-@media (max-width: 576px) {
-    /* .paragraphInfo {
-        background-color: yellow;
-    }
-    
-    .languageSkills {
-        background-color: aqua;
-    } */
-}
+/* *** MEDIA QUERIES *** */
 
 @media (max-width: 1024px) {
     .flexboxDesign {
