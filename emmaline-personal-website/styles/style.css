@@ -92,12 +92,12 @@ h2 {
     padding-bottom: 50px;
 }
 
-.paragraphInfo {
+.paragraph-info {
     background-color: #A5A511; 
     border-radius: 20px;
 }
 
-.paragraphInfo p {
+.paragraph-info p {
     text-indent: 50px;
     padding: 40px 40px 40px;
     font-family: monospace;
