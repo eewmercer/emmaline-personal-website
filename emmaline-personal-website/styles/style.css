@@ -36,21 +36,21 @@ h2 {
     text-transform: capitalize;
 }
 
-.websiteContentBorder {
+.website-content-border {
     width:100%;
     padding: 10%;
     background-color: #3776AC;
     border-radius: 5%;
 }
 
-.websiteWholeBorder {
+.website-whole-border {
     width: 100%;
     margin: 0 auto;
     padding: 5%;
     background: #ffff;
 }
 
-.introSectionName {
+.intro-section-name {
     position: absolute;
     top: 60%;
     bottom: 25%;
@@ -66,14 +66,14 @@ h2 {
     font-variant: small-caps;
 }
 
-.flexboxDesign {
+.flexbox-design {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
-.introImage {
+.intro-image {
     border-radius: 50%;
     width: 90%; 
     padding-top: 15%;
@@ -92,11 +92,8 @@ h2 {
 }
 
 .paragraph-info {
-    background-color: #A5A511; 
-    border-radius: 20px;
-}
-
-.paragraph-info p {
+    margin: 30px;
+    border-radius: 40px;
     text-indent: 50px;
     padding: 40px 40px 40px;
     font-family: monospace;
@@ -106,30 +103,69 @@ h2 {
     line-height: 24px;
 }
 
-.langFlexBox {
+.green-one {
+    background-color: #A5A511; 
+}
+
+.green-two {
+    background-color: #A5A511; 
+}
+
+.green-three {
+    background-color: #A5A511; 
+}
+
+.education-article {
+    border-radius: 40px;
+    text-indent: 50px;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    line-height: 3;
+}
+
+.ball-state-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.ball-state-image {
+    width: 10vw;
+    height: auto;
+}
+
+.college-education {
+    display: flex;
+    flex-direction: column;
+}
+
+.lang-flex-box {
     display: flex;
     justify-content: space-between;
 }
 
-.languageSkills {
+.language-skills {
     background-color: #DAB528;
     border-radius: 20px;
 }
 
-.languageSkillsList {
+.language-skills-list {
     text-indent: 50px;
     padding: 40px 40px 40px;
     list-style-type: none;
 }
 
-.buttonsFlexBox {
+.buttons-flex-box {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     flex-direction: column;
 }
 
-.languageButtons {
+.language-buttons {
     display: inline-block;
     appearance: button;
     background-color: #3776AC;
@@ -159,7 +195,7 @@ h2 {
     width: 100%;
 }
 
-.languageButtons:after {
+.language-buttons:after {
     background-clip: padding-box;
     background-color: white;
     border: solid transparent;
@@ -174,26 +210,26 @@ h2 {
     z-index: -1;
 }
 
-.languageButtons:main,
-.languageButtons:focus {
+.language-buttons:main,
+.language-buttons:focus {
     user-select: auto;
 }
 
-.languageButtons:hover:not(:disabled) {
+.language-buttons:hover:not(:disabled) {
     filter: brightness(1.1);
     -webkit-filter: brightness(1.1);
 }
 
-.languageButtons:disabled {
+.language-buttons:disabled {
     cursor: auto;
 }
 
-.languageButtons:active {
+.language-buttons:active {
     border-width: 4px 0 0;
     background: none;
 }
 
-.whiteBackground {
+.white-background {
     background-color: white;
     border-radius: 20px;
     width: 50%;
@@ -205,12 +241,12 @@ h2 {
     margin-right: 10%;   
 }
 
-.projectHeader {
+.project-header {
     padding-top: 25px;
     padding-left: 25px;
 }
 
-.projectsList {
+.projects-list {
     text-indent: 50px;
     list-style-type: none;
 }
@@ -218,7 +254,7 @@ h2 {
 /* *** MEDIA QUERIES *** */
 
 @media (max-width: 1024px) {
-    .flexboxDesign {
+    .flexbox-design {
         flex-wrap: wrap;
     }
 }
