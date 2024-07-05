@@ -23,9 +23,13 @@ header {
   gap: 20px;
 }
 
+main {
+  padding: 5%;
+  padding-top: 0;
+}
+
 .heading {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: row;
   color: black;
@@ -63,9 +67,10 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   padding: 5%;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .intro-section-name {
@@ -85,18 +90,23 @@ header {
 }
 
 .intro-image {
-  border-radius: 50%;
-  width: 90%;
+  border-radius: 100% 100% 80% 8%;
+  width: 80%;
+  height: auto;
   padding-top: 15%;
-  padding-bottom: 70px;
 }
 
-.wrapper {
-  width: 100%;
+.info-flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.introduction-container {
   padding-bottom: 50px;
   padding-top: 5%;
 }
-.wrapper h2 {
+.introduction-container h2 {
   font-size: 50px;
   color: white;
   padding: 5%;
@@ -114,49 +124,55 @@ header {
 }
 
 .paragraph-info {
-  margin: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
   border-radius: 40px;
   text-indent: 50px;
   padding: 40px 40px 40px;
   font-family: monospace;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
-  line-height: 24px;
+  line-height: 2;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-end;
+  padding: 5%;
 }
 
 .green-one {
   background-color: #A5A511;
 }
 
-.green-two {
-  background-color: #A5A511;
-}
-
-.green-three {
-  background-color: #A5A511;
-}
-
-.education-article {
+.education-article-1 {
   border-radius: 40px;
   text-indent: 50px;
   font-family: monospace;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
+  padding: 40px 40px 40px;
+  line-height: 2;
+}
+
+.education-article-2 {
   line-height: 3;
 }
 
 .ball-state-section {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 30px;
+  justify-content: center;
+  gap: 50px;
 }
 
 .ball-state-image {
-  width: 10vw;
-  height: auto;
+  width: 30%;
+  height: 30%;
 }
 
 .college-education {
@@ -166,7 +182,9 @@ header {
 
 .lang-flex-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: center;
 }
 
 .language-skills {
@@ -184,7 +202,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 80px;
+  margin-left: 13%;
+  margin-bottom: 40px;
 }
 
 .language-buttons {
@@ -251,16 +272,15 @@ header {
   background: none;
 }
 
-.white-background {
+.project-list-background {
   background-color: white;
   border-radius: 20px;
   width: 50%;
   height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  margin-top: 4%;
-  margin-right: 10%;
+  margin-left: 25%;
+  margin-bottom: 50px;
+  padding: 50px;
+  padding-top: 0;
 }
 
 .project-header {
@@ -278,4 +298,35 @@ header {
   .flexbox-design {
     flex-wrap: wrap;
   }
+}
+.about-me {
+  width: 100vw;
+  margin: 100px;
+  margin-top: 50px;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.about-me p {
+  font-size: 20px;
+  line-height: 2;
+}
+.about-me h2 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.bubble-flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 20px;
+}
+.bubble-flexbox div {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #A5A511;
 }/*# sourceMappingURL=style.css.map */

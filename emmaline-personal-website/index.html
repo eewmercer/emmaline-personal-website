@@ -2,8 +2,9 @@
 
 <html>   
     <head>
-        <title>Emmaline Mercer</title>
+        <title>Emmaline Mercer - Home</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" type="image/svg+xml" href="./photos/laptop-favicon.png" />
         <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     </head>
     <body>
@@ -11,9 +12,9 @@
             <nav class="heading">
                 <h1>Emmaline Mercer</h1>
                 <section>
-                    <h2>Home</h2>
-                    <h2>About</h2>
-                    <h2>Projects</h2>
+                    <h2 id="home">Home</h2>
+                    <h2 id="about">About</h2>
+                    <!-- <h2 id="projects">Projects</h2> -->
                 </section>
             </nav>
     
@@ -22,64 +23,72 @@
             <div class="white-block header-opacity"></div>    
         </header>
 
-        <section class="info-summary-container">
-            <div> 
-                <img class="intro-image" src="photos/Black_With_Balloons.jpeg" alt="my intro image"> 
-            </div>
-
-            <article class="wrapper">
-                <h2>Introduction...</h2>
-                <article class="paragraph-info green-one">
-                    <p>Emmaline Mercer is an aspiring software engineer with a love for 
-                    problem solving and creating something from nothing. 
-                    She has a passion for programming and all of the exciting challenges it provides.</p>
-                </article>
-
-                <article class="paragraph-info green-two">
-                    <p>She is currently earning her bachelor's degree at Ball State University as an undergraduate 
-                        as well as working a position at Ball State's Digital Corps as an apprentice for the Development Team.</p>
-                </article>
-
-                <article class="education-article green-three ball-state-section">
-                    <img src="photos/BSU Department Logo.png" class="ball-state-image" alt="Ball State University Logo">
+        <main>
+            <section class="info-summary-container">
+                <div class="intro-image-container"> 
+                    <img class="intro-image" src="photos/Black_With_Balloons.jpeg" alt="my intro image"> 
+                </div>
+    
+                <section class="info-flexbox">
+                    <article class="introduction-container">
+                        <h2>Introduction<span style="color: yellow;">[]</span></h2>
+                        <article class="paragraph-info green-one">
+                            <p>Emmaline Mercer is an aspiring software engineer with a love for 
+                            problem solving and creating something from nothing. 
+                            She has a passion for programming and all of the exciting challenges it provides.</p>
+                        </article>
+                    </article>
+        
+                    <article class="education-article-1 green-one">
+                        <p>She is currently earning her bachelor's degree at Ball State University as an undergraduate 
+                            as well as working a position at Ball State's Digital Corps as an apprentice for the Development Team.</p>
+                    </article>
+                </section>
+                
+            </section>
+    
+            <section class="education-container">
+                <article class="education-article-1 education-article-2 green-one ball-state-section">
+                    <img src="photos/bsu-logo.png" class="ball-state-image" alt="Ball State University Logo">
                     <div class="college-education">
                         <p><span style="font-style: italic; font-weight: 1000;">BS</span> in Computer Science</p>
                         <p><span style="font-style: italic; font-weight: 1000;">Concentration</span> in Web and Mobile App Development</p>
                         <p><span style="font-style: italic; font-weight: 1000;">Minor</span> in Computer Information and Technolology</p>
                     </div>
                 </article>
-            </article>
-        </section>
+            </section>
+    
+            <section class="projects-description-container">
+                <h2>Coding Languages<span style="color: yellow;">[]</span></h2>
+                <article class="language-skills">
+                    <div class="lang-flex-box">
+                        <ul class="buttons-flex-box language-skills-list">
+                            <li>
+                                <button class="language-buttons" id="btnJava">Java</button>
+                            </li>
+                            <li>
+                                <button class="language-buttons" id="btnCSS">CSS</button>
+                            </li>
+                            <li>
+                                <button class="language-buttons" id="btnHTML">HTML</button>
+                            </li>
+                            <li>
+                                <button class="language-buttons" id="btnPython">Python</button>
+                            </li>
+                            <li>
+                                <button class="language-buttons" id="btnJS">JavaScript</button>
+                            </li>
+                        </ul>                  
+                        <article class="project-list-background">
+                            <h3 class="project-header">Projects:</h3>
+                            <br>
+                            <p id="gitHubLink" class="git-hub-list"></p>
+                        </article>
+                    </div>
+                </article>
+            </section>
+        </main>
 
-        <section class="projects-description-container">
-            <h2>Coding Languages...</h2>
-            <article class="language-skills">
-                <div class="lang-flex-box">
-                    <ul class="buttons-flex-box language-skills-list">
-                        <li>
-                            <button class="language-buttons" id="btnJava">Java</button>
-                        </li>
-                        <li>
-                            <button class="language-buttons" id="btnCSS">CSS</button>
-                        </li>
-                        <li>
-                            <button class="language-buttons" id="btnHTML">HTML</button>
-                        </li>
-                        <li>
-                            <button class="language-buttons" id="btnPython">Python</button>
-                        </li>
-                        <li>
-                            <button class="language-buttons" id="btnJS">JavaScript</button>
-                        </li>
-                    </ul>                  
-                    <article class="white-background">
-                        <h3 class="project-header">Projects:</h3>
-                        <br>
-                        <p id="gitHubLink" class="git-hub-list"></p>
-                    </article>
-                </div>
-            </article>
-        </section>
     <script src="scripts/structure.js"></script>
     </body>
 </html>
