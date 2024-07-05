@@ -6,255 +6,276 @@
 #DAB528 - sunny yellow
 #A5A511 - lime green
 */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Monaco', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monaco", monospace;
 }
 
-h2 {
-    font-size: 50px;
-    color: white;
-    padding: 5%;
+body {
+  background-color: #3776AC;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .heading {
-    font-size: 60px;
-    letter-spacing: 4px;
-    word-spacing: 4.2px;
-    color: #000000;
-    background-color: white;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    border-radius: 20px 20px 20px 20px;
-    padding: 35px;
-    font-weight: 400;
-    text-decoration: overline solid rgb(68, 68, 68);
-    font-style: italic;
-    font-variant: small-caps;
-    text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: black;
+  background-color: white;
+  padding: 50px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-variant: small-caps;
+  width: 100vw;
+}
+.heading h1 {
+  font-size: 60px;
+}
+.heading h2 {
+  font-size: 40px;
+}
+.heading section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
-.website-content-border {
-    width:100%;
-    padding: 10%;
-    background-color: #3776AC;
-    border-radius: 5%;
+.white-block {
+  background-color: white;
+  width: 100vw;
+  height: 20px;
+  opacity: 0.5;
 }
 
-.website-whole-border {
-    width: 100%;
-    margin: 0 auto;
-    padding: 5%;
-    background: #ffff;
+.header-opacity {
+  opacity: 0.2;
+}
+
+.info-summary-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 5%;
+  padding-top: 0;
 }
 
 .intro-section-name {
-    position: absolute;
-    top: 60%;
-    bottom: 25%;
-    left: 10%;
-    width: 100%;
-    word-spacing: 100px;
-    font-size: 80px;
-    letter-spacing: 40px;
-    word-spacing: 150px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 8px 5px 5px black;
-    font-variant: small-caps;
-}
-
-.flexbox-design {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+  position: absolute;
+  top: 60%;
+  bottom: 25%;
+  left: 10%;
+  width: 100%;
+  word-spacing: 100px;
+  font-size: 80px;
+  letter-spacing: 40px;
+  word-spacing: 150px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 8px 5px 5px black;
+  font-variant: small-caps;
 }
 
 .intro-image {
-    border-radius: 50%;
-    width: 90%; 
-    padding-top: 15%;
-    padding-bottom: 70px;
+  border-radius: 50%;
+  width: 90%;
+  padding-top: 15%;
+  padding-bottom: 70px;
 }
 
 .wrapper {
-    width: 100%;
-    padding-bottom: 50px;
-    padding-top: 5%;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 5%;
+}
+.wrapper h2 {
+  font-size: 50px;
+  color: white;
+  padding: 5%;
 }
 
-.wrapper2 {
-    width: 100%;
-    padding-bottom: 50px;
+.projects-description-container {
+  width: 100%;
+  padding: 5%;
+  padding-top: 0;
+}
+.projects-description-container h2 {
+  font-size: 50px;
+  color: white;
+  padding: 5%;
 }
 
 .paragraph-info {
-    margin: 30px;
-    border-radius: 40px;
-    text-indent: 50px;
-    padding: 40px 40px 40px;
-    font-family: monospace;
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-    line-height: 24px;
+  margin: 30px;
+  border-radius: 40px;
+  text-indent: 50px;
+  padding: 40px 40px 40px;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
 }
 
 .green-one {
-    background-color: #A5A511; 
+  background-color: #A5A511;
 }
 
 .green-two {
-    background-color: #A5A511; 
+  background-color: #A5A511;
 }
 
 .green-three {
-    background-color: #A5A511; 
+  background-color: #A5A511;
 }
 
 .education-article {
-    border-radius: 40px;
-    text-indent: 50px;
-    font-family: monospace;
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-    line-height: 3;
+  border-radius: 40px;
+  text-indent: 50px;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 3;
 }
 
 .ball-state-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
 }
 
 .ball-state-image {
-    width: 10vw;
-    height: auto;
+  width: 10vw;
+  height: auto;
 }
 
 .college-education {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .lang-flex-box {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .language-skills {
-    background-color: #DAB528;
-    border-radius: 20px;
+  background-color: #DAB528;
+  border-radius: 20px;
 }
 
 .language-skills-list {
-    text-indent: 50px;
-    padding: 40px 40px 40px;
-    list-style-type: none;
+  text-indent: 50px;
+  padding: 40px 40px 40px;
+  list-style-type: none;
 }
 
 .buttons-flex-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
 }
 
 .language-buttons {
-    display: inline-block;
-    appearance: button;
-    background-color: #3776AC;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: .8px;
-    line-height: 20px;
-    margin: 0;
-    outline: none;
-    overflow: visible;
-    padding: 13px 16px;
-    text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transform: translateZ(0);
-    transition: filter .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 100%;
+  display: inline-block;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #3776AC;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .language-buttons:after {
-    background-clip: padding-box;
-    background-color: white;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
+  background-clip: padding-box;
+  background-color: white;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .language-buttons:main,
 .language-buttons:focus {
-    user-select: auto;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
 }
 
 .language-buttons:hover:not(:disabled) {
-    filter: brightness(1.1);
-    -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
 }
 
 .language-buttons:disabled {
-    cursor: auto;
+  cursor: auto;
 }
 
 .language-buttons:active {
-    border-width: 4px 0 0;
-    background: none;
+  border-width: 4px 0 0;
+  background: none;
 }
 
 .white-background {
-    background-color: white;
-    border-radius: 20px;
-    width: 50%;
-    height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    margin-top: 4%;   
-    margin-right: 10%;   
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  margin-top: 4%;
+  margin-right: 10%;
 }
 
 .project-header {
-    padding-top: 25px;
-    padding-left: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
 }
 
 .projects-list {
-    text-indent: 50px;
-    list-style-type: none;
+  text-indent: 50px;
+  list-style-type: none;
 }
 
 /* *** MEDIA QUERIES *** */
-
 @media (max-width: 1024px) {
-    .flexbox-design {
-        flex-wrap: wrap;
-    }
-}
+  .flexbox-design {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
